@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 type wait_for_dev > /dev/null 2>&1 || . /lib/dracut-dev-lib.sh
 

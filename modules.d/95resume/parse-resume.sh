@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 if resume=$(getarg resume=) && ! getarg noresume; then
     export resume

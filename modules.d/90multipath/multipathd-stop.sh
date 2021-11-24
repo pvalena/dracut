@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 if [ -e /etc/multipath.conf ]; then
     pkill multipathd > /dev/null 2>&1

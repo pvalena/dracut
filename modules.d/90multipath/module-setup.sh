@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 is_mpath() {
     local _dev=$1

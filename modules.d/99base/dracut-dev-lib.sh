@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 # replaces all occurrences of 'search' in 'str' with 'replacement'
 #

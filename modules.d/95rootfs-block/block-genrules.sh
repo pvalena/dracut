@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 # shellcheck disable=SC2154
 if [ "${root%%:*}" = "block" ]; then

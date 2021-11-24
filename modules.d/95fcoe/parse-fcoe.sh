@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 #
 # Supported formats:
 # fcoe=<networkdevice>:<dcb|nodcb>:<fabric|vn2vn>

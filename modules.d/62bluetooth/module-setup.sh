@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # This file is part of dracut.
 # SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -6,14 +6,7 @@
 check() {
     # If the binary(s) requirements are not fulfilled the module can't be installed
     require_any_binary /usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd || return 1
-
-    if [[ $hostonly ]]; then
-        # Include by default if a Peripheral (0x500) is found of minor class:
-        #  * Keyboard (0x40)
-        #  * Keyboard/pointing (0xC0)
-        grep -qiE 'Class=0x[0-9a-f]{3}5[4c]0' /var/lib/bluetooth/*/*/info 2> /dev/null && return 0
-    fi
-
+    # disabled until https://github.com/dracutdevs/dracut/issues/1521 is resolved
     return 255
 }
 

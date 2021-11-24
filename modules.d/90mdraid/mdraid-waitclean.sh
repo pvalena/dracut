@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 if getargbool 0 rd.md.waitclean; then
     type getarg > /dev/null 2>&1 || . /lib/dracut-lib.sh

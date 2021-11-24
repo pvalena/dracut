@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 case "${root#block:}" in
     LABEL=* | UUID=* | PARTUUID=* | PARTLABEL=*)

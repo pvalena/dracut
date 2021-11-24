@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # return value:
 #  'nfs4': Only nfs4 founded

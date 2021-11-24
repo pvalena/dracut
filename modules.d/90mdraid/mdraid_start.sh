@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 
 type getargs > /dev/null 2>&1 || . /lib/dracut-lib.sh
 
