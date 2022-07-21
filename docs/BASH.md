@@ -24,7 +24,7 @@ func() {
 ## find, grep, print0, -0, -z
 
 Don't use `find` in `for` loops, because filenames can contain spaces.
-Try to use `globstar` and `nullglob` or null byte terminated strings.
+Try to use `globstar` or null byte terminated strings.
 
 Instead of:
 ```shell
@@ -38,8 +38,8 @@ func() {
 use:
 ```shell
 func() {
-    trap "$(shopt -p nullglob globstar)" RETURN
-    shopt -q -s nullglob globstar
+    trap "$(shopt -p globstar)" RETURN
+    shopt -q -s globstar
 
     for file in /usr/lib*/**/lib*.a; do
       [[ -f $file ]] || continue
