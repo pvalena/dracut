@@ -11,13 +11,13 @@ check() {
 depends() {
     # if dmsetup is not installed, then we cannot support fedora/red hat
     # style live images
-    echo dm rootfs-block img-lib overlayfs
+    echo dm rootfs-block img-lib
     return 0
 }
 
 # called by dracut
 installkernel() {
-    instmods squashfs loop iso9660
+    instmods squashfs loop iso9660 overlay
 }
 
 # called by dracut
